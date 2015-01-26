@@ -1,0 +1,12 @@
+#+TITLE: Basics of Biological Chemistry (Fall 2014)
+#+AUTHOR: Cedric Lood
+#+STARTUP: latexpreview
+#+LATEX_HEADER: \usepackage[left=2.35cm, right=3.35cm, top=3.35cm, bottom=3.35cm]{geometry}
+#+OPTIONS: toc:2
+#+OPTIONS: LaTeX:dvipng
+
+* Part 1: Prof. J. Vanderleyden – dr. H. Steenackers
+
+* Part 2: Prof. B. Sels
+
+* Part 3: Prof. D. De Vos
