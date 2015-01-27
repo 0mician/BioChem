@@ -1,12 +1,91 @@
 #+TITLE: Basics of Biological Chemistry (Fall 2014)
 #+AUTHOR: Cedric Lood
-#+STARTUP: latexpreview
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt, a4paper,titlepage]
 #+LATEX_HEADER: \usepackage[left=2.35cm, right=3.35cm, top=3.35cm, bottom=3.35cm]{geometry}
-#+OPTIONS: toc:2
-#+OPTIONS: LaTeX:dvipng
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{titlesec}
+#+TITLE:
+#+BEGIN_LaTeX
+\renewcommand{\thesubsubsection}{\alph{subsubsection}.)}
+\include{title}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\clearpage
+#+END_LaTeX
+#+STARTUP: latexpreview
+#+OPTIONS: LaTeX:dvipng, toc:nil
 
-* Part 1: Prof. J. Vanderleyden – dr. H. Steenackers
 
-* Part 2: Prof. B. Sels
 
-* Part 3: Prof. D. De Vos
+* Prof. J. Vanderleyden – dr. H. Steenackers
+** Chemical reaction equation
+
+Consider the following reaction: (NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  NH_{4}NO_{3} + ZnCO_{3}
+
+*** Balance the equation  
+(NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  2 NH_{4}NO_{3} + ZnCO_{3}
+
+*** Reactants and products
+Name all reactants and reaction products.
+
+- (NH_{4})_{2}CO_{3} : Ammonium carbonate
+- Zn(NO_{3})_{2} : Zinc nitrate
+- NH_{4}NO_{3} : Ammonium nitrate
+- ZnCO_{3} : Zinc carbonate
+
+*** Lewis structure, VESPR
+Construct the Lewis structures of the polyatomic ions you recognize
+and predict their molecular structure using the VSEPR theory.
+
+
+
+*** Oxidation states
+Determine the oxidation state of all the atoms in all the
+compounds. Is this an oxidation-reduction reaction?
+
+*** Mass
+How many grams of ZnCO3 can be prepared from 400g Zn(NO3)2 by using
+sufficient(NH4)2CO3?
+
+** DNA sequence analysis
+
+The following diagram shows part of a template DNA strand, with
+sections X,Y and Z being the exons of a gene:
+
+#+BEGIN_QUOTE
+5’                        3’
+GTA GGT TGT ATC GAT GGT CAT
+ X         Y             Z
+#+END_QUOTE
+
+a) What is the corresponding sequence on the new daughter strand made
+from the given parent strand during replication? 
+
+b) What polypeptide sequence will be synthesized from the given
+template DNA? Give a short overview of the different processes (and
+enzymes) involved in the synthesis of polypeptides from template
+DNA. Where in the cell do these processes take place?
+
+c) What polypeptide sequence will be synthesized if the ATC in exon Y
+is mutated to TTC? What polypeptide sequence will be synthesized if
+the ATC in exon Y is mutated to ATG? Which of those substitution
+mutations is likely to be more harmful? Why?
+
+d) Which steps in polypeptide synthesis are affected by resp. the
+macrolide antibiotics and the tetracycline antibiotics?
+
+e) The error rate in RNA synthesis is much higher than the error rate
+of DNA replication. What is the origin of this difference? Motivate
+why this is not a serious problem.
+
+
+** All tRNA molecules have a particular 3D-structure. Which functional
+   groups and which chemical bonds/interactions contribute to this
+   particular structure? Why is this particular structure of
+   importance for the biological function?
+
+* Prof. B. Sels
+* Prof. D. De Vos
