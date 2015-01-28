@@ -189,16 +189,24 @@ the \beta-anomer of \alpha(1→6)galactoglucose and b)
 * Prof. D. De Vos
 Considering the following molecule:
 
-#+ATTR_LATEX: width=7cm
+#+ATTR_LATEX: width=10cm
 [[./Figures/Part3MoleculeRaw.pdf]]
 
 ** Functional groups
 =Q:= Name all functional groups
 
-=A:=
+=A:= See annoted figure below
+
+#+ATTR_LATEX: width=10cm
+[[./Figures/Part3MoleculeFunctionalGroups.pdf]]
 
 ** Water and oil solubility factors
 =Q:= Indicate which groups make the molecule rather water-soluble
 than oil-soluble
 
-=A:=
+=A:= The following groups can partake in hydrogen bonds with water
+molecules and increase the solubility of the molecule in water :
+
+- Hydroxyl groups (5 of them)
+- Carbonyl groups (3 of them)
+- Amino group (1 present)
