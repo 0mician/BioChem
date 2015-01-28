@@ -179,13 +179,53 @@ structures, a) Gln-Ser-Lys-Lys-Ser and b) Cys-Asp-Asp-Glu-Lys,
 determine its net charge in physiological conditions. How would you
 separate the two peptides ?  
 
-=A:=
+=A:= These are the chemical structures of:
+- Gln-Ser-Lys-Lys-Ser
+
+  #+BEGIN_LaTeX
+  \setatomsep{25pt}
+  \chemfig{NH3^{+}-C(-[2]H)(-[6]CH2(-[6]CH2(-[6]C(=[7]O)(-[5]NH2))))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6]CH2(-[6]OH))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6](CH2(-[6]CH2(-[6]CH2(-[6]CH2(-[6]NH3^{+}))))))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6](CH2(-[6]CH2(-[6]CH2(-[6]CH2(-[6]NH3^{+}))))))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6]CH2(-[6]OH))-COO^{-}}
+  #+END_LaTeX
+
+- Cys-Asp-Asp-Glu-Lys
+
+  #+BEGIN_LaTeX
+  \setatomsep{25pt}
+  \chemfig{NH3^{+}-C(-[2]H)(-[6]CH2(-[6]SH))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6]CH2(-[6]COO^{-}))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6]CH2(-[6]COO^{-}))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6]CH2(-[6]CH2(-[6]COO^{-})))-C(=[2]O)-N(-[6]H)-C(-[2]H)(-[6](CH2(-[6]CH2(-[6]CH2(-[6]CH2(-[6]NH3^{+}))))))-COO^{-}}
+  #+END_LaTeX
+
+Under physiological conditions (ie, pH around 7.35), these would be
+the net charge on each polypeptide:
+
+- Gln-Ser-Lys-Lys-Ser: net charge is +2
+
+  #+BEGIN_LaTeX
+  \chemfig{\chemabove{NH3}{\scriptstyle\oplus}-Gln-Ser-\chemabove{Lys}{\scriptstyle\oplus}-\chemabove{Lys}{\scriptstyle\oplus}-Ser-\chemabove{COO}{\ominus}}
+  #+END_LaTeX
+
+- Cys-Asp-Asp-Glu-Lys: net charge is -2
+
+  #+BEGIN_LaTeX
+  \chemfig{\chemabove{NH3}{\scriptstyle\oplus}-Cys-\chemabove{Asp}{\ominus}-\chemabove{Asp}{\ominus}-\chemabove{Glu}{\ominus}-\chemabove{Ly}{\scriptstyle\oplus}-\chemabove{COO}{\ominus}}
+  #+END_LaTeX
+
+Separation of both proteins can thus be achieved by ion exchange
+chromatography since they both have a distinct charge.
+
 ** Chemical structure of disaccharides
 =Q:= Draw the chemical structure of the following disaccharides: a)
 the \beta-anomer of \alpha(1→6)galactoglucose and b)
 \beta,\alpha(1→2)glucofructose.
 
-=A:=
+=A:= These are the chemical structure of:
+- \beta-anomer of \alpha(1→6)galactoglucose
+
+blablabla
+
+- \beta,\alpha(1→2)glucofructose
+
+blablabla
+
 * Prof. D. De Vos
 Considering the following molecule:
 
@@ -197,7 +237,7 @@ Considering the following molecule:
 
 =A:= See annoted figure below
 
-#+ATTR_LATEX: width=10cm
+#+ATTR_LATEX: width=11cm
 [[./Figures/Part3MoleculeFunctionalGroups.pdf]]
 
 ** Water and oil solubility factors
