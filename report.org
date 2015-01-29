@@ -23,7 +23,7 @@
 
 
 
-* Prof. J. Vanderleyden – dr. H. Steenackers
+* Questions from Prof. J. Vanderleyden – dr. H. Steenackers
 ** Chemical reaction equation
 
 Consider the following reaction: (NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  NH_{4}NO_{3} + ZnCO_{3}
@@ -135,7 +135,29 @@ DNA? Give a short overview of the different processes (and enzymes)
 involved in the synthesis of polypeptides from template DNA. Where in
 the cell do these processes take place?
 
-=A:= The synthesized polypeptide will consist of the amino acids =VCIH=. 
+=A:= The synthesized polypeptide will consist of the amino acids
+=Val-Cys-Ile-His=. Since it is mentioned that exons are present, we
+can assume the translation will take place with the eukaryotic
+machinery. It will consist of the following stages:
+
+- Transcription: In the nucleus, the RNA Polymerase II will be
+  recruited and will bind to the promoter of the gene. It will
+  produce, by moving in the 5' to 3' direction, a pre messenger RNA
+  which will be identical to the DNA template sequence (with the
+  exception that Uracyl will be used instead of Thymine, and also the
+  addition of a 5' CAP). That messenger RNA will then be processed by
+  the spliceosome, which will remove the introns, and a Poly-A tail
+  will also be added at the 3' end of the mRNA. The mRNA is then
+  ready to go outside of the nucleus to be translated.
+
+- Translation: the mRNA leaves the nucleus and passes through the
+  reticulated ER where it will be captured by a ribosome that will
+  either bind to the ER or not. It will then start scanning for a
+  start codon in the mRNA. From that point on, the synthesis of a
+  polypeptide will be accomplished by reading 3 base pairs at a time
+  and pairing these 3 with the correct tRNA. After that, the
+  polypeptide will either be processed further and sent to the golgi
+  apparatus, or will remain in the cytosol.
 
 *** Mutated exon
 =Q:= What polypeptide sequence will be synthesized if the ATC in exon
@@ -143,7 +165,12 @@ Y is mutated to TTC? What polypeptide sequence will be synthesized if
 the ATC in exon Y is mutated to ATG? Which of those substitution
 mutations is likely to be more harmful? Why?
 
-=A:=
+=A:= Here are the new sequences with mutated exons:
+
+- TGTATC -> TGTTTC : the resulting polypeptide will be =Val-Phe-His= 
+-  -> ATG : the resulting polypeptide will be =Val-Met-His=
+
+The second
 *** Interactions with antibiotics
 =Q:= Which steps in polypeptide synthesis are affected by resp. the
 macrolide antibiotics and the tetracycline antibiotics?
@@ -162,7 +189,7 @@ this particular structure? Why is this particular structure of
 importance for the biological function?
 
 =A:=
-* Prof. B. Sels
+* Questions from Prof. B. Sels
 ** Biopolymer organisation
 =Q:= The course and the textbook systematically organize four important
 biopolymers mainly according to their chemical structure. Attempt a
@@ -220,13 +247,23 @@ the \beta-anomer of \alpha(1→6)galactoglucose and b)
 =A:= These are the chemical structure of:
 - \beta-anomer of \alpha(1→6)galactoglucose
 
-blablabla
+Beta anomers have a cis relationship between the CH_{2}OH group on
+the C_{1} and the OH group on the C_{6}. This helps us determine the
+structure of the monosaccharides galactose and glucose. The
+polymerisation is achieved through an \alpha binding between the
+C_{6} of the Galactose, and the C_{1} of the glucose molecule, giving
+the following molecular structure:
+
+#+ATTR_LATEX: width=11cm
+[[./Figures/B-A(1-6)GalactoGlucose.pdf]]
 
 - \beta,\alpha(1→2)glucofructose
 
-blablabla
+#+ATTR_LATEX: width=8cm
+[[./Figures/BA(1-2)GlucoFructose2.pdf]]
 
-* Prof. D. De Vos
+
+* Questions from Prof. D. De Vos
 Considering the following molecule:
 
 #+ATTR_LATEX: width=10cm
