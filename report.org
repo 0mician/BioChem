@@ -22,9 +22,9 @@
 #+STARTUP: latexpreview
 #+OPTIONS: LaTeX:dvipng, toc:nil
 
-
 * Questions from Prof. J. Vanderleyden – dr. H. Steenackers
-Note: most answers to this work were found in the reference book \cite{BioChemBlei}
+Note: reference material for this part mostly come from the
+recommended class book \cite{BioChemBlei}
 ** Chemical reaction equation
 
 Consider the following reaction: (NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  NH_{4}NO_{3} + ZnCO_{3}
@@ -54,7 +54,7 @@ Ammonium & Carbonate & Zinc & Nitrate  \\
 \hline
 \chemfig{N^{+}(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)} &
 \chemfig{\lewis{3:5:,O}=C(-[1]\lewis{3:1:7:,O}^{-})(-[7]\lewis{1:7:5:,O}^{-})} &
-\chemfig{\lewis{4:,Zn^{2+}}} &
+\chemfig{\lewis{0.4.,Zn^{2+}}} &
 \chemfig{\lewis{3:5:,O}=N^{+}(-[1]\lewis{3:1:7:,O}^{-})(-[7]\lewis{1:7:5:,O}^{-})}\\
 \end{tabular}
 #+END_LaTeX
@@ -81,7 +81,7 @@ soluble in water and will thus move freely as charged ions. The Zinc
 and Carbonate ions will precipitate. The reaction is not an
 oxydo-reduction as shown by the details below:
 
-- Zn(NO_{3})_{2} each O are -2, N is +5, and (NO3^{-})_{2} is -2 and Zn is +2
+- Zn(NO_{3})_{2} each O are -2, N is +5, (NO3^{-})_{2} is -2, and Zn is +2
 - (NH_{4})_{2}CO_{3} N is -3, each H are +1, and (NH_{4})_{2} is
      +2. C is +4 and each O is -2, and (CO_3)^{-2} is -2.
 - NH_{4}NO_{3} for NH_{4}, the oxidation state is +1, and for NO_{3}
@@ -125,7 +125,7 @@ GTA GGT TGT ATC GAT GGT CAT
 made from the given parent strand during replication?
 
 =A:= Given the principle of base pairing, we can determine the daughter
-sequence to be (here in the 3' to 5' direction):
+sequence to be:
 
 #+BEGIN_EXAMPLE
 5'                        3'
@@ -182,7 +182,8 @@ Aspartate would be negatively charged in the physiological condition,
 and the Glutamate would also be negatively charged, the only
 difference between the 2 is then an additional CH2 group in the side
 chain. Histidine on the the other hand is neutral in physiological
-conditions, and the side chain is significantly larger.
+conditions, its side chain is also significantly larger/bulkier due to
+the aromatic ring.
 
 *** Interactions with antibiotics
 =Q:= Which steps in polypeptide synthesis are affected by resp. the
@@ -191,8 +192,8 @@ macrolide antibiotics and the tetracycline antibiotics?
 =A:= Both substance have the capabilities to inhibit the synthesis of
 proteins by affecting ribosomal activity \cite{AntibioticsRibosomeEffect}. 
 
-- Macrolide : they prevent peptidyltransferase from linking the
-  peptide from the tRNA to the growing polypeptide chain. 
+- Macrolide : prevents peptidyltransferase from linking the peptide
+  from the tRNA to the growing polypeptide chain.
 
 - Tetracycline : this one functions by preventing the binding of tRNA
   to mRNA in the ribosome. 
@@ -207,10 +208,11 @@ an organism, the fidelity of the DNA replication is required to ensure
 the continuity of the species and its viability accross multiple
 generation. The cell needs thus enforce a high fidelity of the
 replication process through an extensive proof reading system. On the
-other hand,There is no proof reading for transcription. Whenever an
+other hand, there is no proof reading for transcription. Whenever an
 incorrect mRNA is transcribed, the effect are very local and
 temporary, indeed there is no real harm in producing a couple of
-non-functioning mRNA or proteins.
+non-functioning mRNA or proteins that will eventually be degraded by
+the cell.
 
 ** tRNA 3D-Structure
 =Q:= All tRNA molecules have a particular 3D-structure. Which
@@ -218,17 +220,18 @@ functional groups and which chemical bonds/interactions contribute to
 this particular structure? Why is this particular structure of
 importance for the biological function?
 
-=A:= below is a representation of a tRNA structure \cite{tRNA-Phe}. The
-structure of the tRNA contains a couple of loops and contains parts
-with base pairing (hydrogen bonds). Couple of important sections can
-be identified that are common to tRNAs and critical to their
-function :
+=A:= Below is a representation of a tRNA structure
+\cite{tRNA-Phe}. The structure of the tRNA contains a couple of loops
+and contains parts with base pairing (hydrogen bonds). This structure
+is critical for the correct capture, processing, and release of the
+tRNAs by the ribosomes. Couple of important sections can be identified
+that are common to tRNAs and critical to their function :
 
-- anticodon arm (blue): that loop will contain the anticodon (black)
+- Anticodon arm (blue): that loop will contain the anticodon (black)
   which will base pair with the mRNA codon.
-- acceptor stem (purple): which is the attachment site of the amino
+- Acceptor stem (purple): which is the attachment site of the amino
   acids.
-- T Arm (green): that region is a special recognition site for the
+- T-Arm (green): that region is a special recognition site for the
   ribosome. It allows a tRNA-ribosome complex to form and translation
   to proceed.
 
@@ -236,7 +239,8 @@ function :
 [[./Figures/TRNA-Phe_yeast.png]]
 
 * Questions from Prof. B. Sels
-Note: most answers to this work were found in the reference book \cite{BioChemBlei}
+Note: reference material for this part mostly come from the
+recommended class book \cite{BioChemBlei}
 ** Biopolymer organisation
 =Q:= The course and the textbook systematically organize four important
 biopolymers mainly according to their chemical structure. Attempt a
@@ -248,14 +252,39 @@ chemical structure and/or physical properties.
 
 =A:= The fours main categories of polypeptide consist of the
 carbohydrates, the nucleic acids, the proteins (polypeptides), and the
-lipids. Here is my attempt at reorganizing them based on the above
+lipids. Here is my attempt at reorganizing them based on the following
 categories:
 
-- Energy: carbohydrates and lipids (long term storage)
-- Structure: phospholipids for the cell membrane, proteins for the
-  exoskeletton and the misc filaments in the cell.
-- Communication: proteins mostly, rna as intermediate for the
-  translation of proteins.
+*** Energy
+- Carbohydrates for short term storage of energy, either for
+  immediate release of energy (glucose, galactose, and other monomers
+  of C6H12O6), or for midterm storage of energy (Polysaccharide
+  glycogen).  
+- Lipids can be used in a triglyceride form to store energy for the
+  long term.
+- The universal energy conveyor of the cellular life is ATP, which is
+  a triphosphated adenosine (nucleic acid).
+*** Structure
+- Phospholipids for the cell membrane, cholesterol for its
+  fluidity. 
+- Fibrous proteins are used to form the exoskeletton and the
+  misc filaments in the cell (Actin, Tubulin, etc)
+- Polysaccharides can be used for structure as well, for example as
+  cellulose for the rigidity of the plants, or as chitin for the
+  exosqueleton of the insects.
+*** Communication
+- DNA is the central repository of information for the
+  organism genetic makeup, which is passed on through the
+  generations.
+- RNA is the intermediate messenger for the translation of
+  proteins. 
+- Modified amino acids are involved in communication too (eg Thyroxine
+  and Melatonin).
+- A host of membrane proteins that help recognizing and process
+  signals are found on most cells.
+- Neurotransmitters that carry signal from one neurons' synapses to
+  another can be divided in 3 broad constitutive categories, which
+  include amino acids, peptides, and monoamines.
 
 ** Chemical structure of proteins and proteins separation
 =Q:= Draw the chemical structure of the following two oligopeptide
@@ -294,8 +323,11 @@ the net charge on each polypeptide:
   #+END_LaTeX
 
 Separation of both proteins can thus be achieved by ion exchange
-chromatography since they both have a distinct charge
-\cite{BioChemPrinciples}.
+chromatography since they both have quite a distinct charge
+\cite{BioChemPrinciples}. For example, we could use anion exchange
+chromatography, which would capture the negatively charged
+polypeptide, and let the positively charged one pass through. The
+former could then be recovered later on by washing away the column.
 
 ** Chemical structure of disaccharides
 =Q:= Draw the chemical structure of the following disaccharides: a)
@@ -312,17 +344,17 @@ polymerisation is achieved through an \alpha binding between the
 C_{6} of the Galactose, and the C_{1} of the glucose molecule, giving
 the following molecular structure:
 
-#+ATTR_LATEX: width=11cm
+#+ATTR_LATEX: width=9cm
 [[./Figures/B-A(1-6)GalactoGlucose.pdf]]
 
 - \beta,\alpha(1→2)glucofructose
 
-#+ATTR_LATEX: width=8cm
+#+ATTR_LATEX: width=6cm
 [[./Figures/BA(1-2)GlucoFructose2.pdf]]
 
 * Questions from Prof. D. De Vos
-Note: most answers to this work were found in the reference
-book \cite{BioChemBlei}
+Note: reference material for this part mostly come from the
+recommended class book \cite{BioChemBlei}
 
 Considering the following molecule:
 

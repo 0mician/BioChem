@@ -1,4 +1,4 @@
-% Created 2015-01-30 Fre 20:15
+% Created 2015-01-30 Fre 23:42
 \documentclass[11pt, a4paper,titlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -44,11 +44,11 @@
 \tableofcontents
 \clearpage
 
-
 \section{Questions from Prof. J. Vanderleyden – dr. H. Steenackers}
 \label{sec-1}
 
-Note: most answers to this work were found in the reference book \cite{BioChemBlei}
+Note: reference material for this part mostly come from the
+recommended class book \cite{BioChemBlei}
 \subsection{Chemical reaction equation}
 \label{sec-1-1}
 
@@ -86,7 +86,7 @@ Ammonium & Carbonate & Zinc & Nitrate  \\
 \hline
 \chemfig{N^{+}(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)} &
 \chemfig{\lewis{3:5:,O}=C(-[1]\lewis{3:1:7:,O}^{-})(-[7]\lewis{1:7:5:,O}^{-})} &
-\chemfig{\lewis{4:,Zn^{2+}}} &
+\chemfig{\lewis{0.4.,Zn^{2+}}} &
 \chemfig{\lewis{3:5:,O}=N^{+}(-[1]\lewis{3:1:7:,O}^{-})(-[7]\lewis{1:7:5:,O}^{-})}\\
 \end{tabular}
 
@@ -114,7 +114,7 @@ and Carbonate ions will precipitate. The reaction is not an
 oxydo-reduction as shown by the details below:
 
 \begin{itemize}
-\item Zn(NO$_{3}$)$_{2}$ each O are -2, N is +5, and (NO3$^{-}$)$_{2}$ is -2 and Zn is +2
+\item Zn(NO$_{3}$)$_{2}$ each O are -2, N is +5, (NO3$^{-}$)$_{2}$ is -2, and Zn is +2
 \item (NH$_{4}$)$_{2}$CO$_{3}$ N is -3, each H are +1, and (NH$_{4}$)$_{2}$ is
      +2. C is +4 and each O is -2, and (CO$_3$)$^{\mathrm{-2}}$ is -2.
 \item NH$_{4}$NO$_{3}$ for NH$_{4}$, the oxidation state is +1, and for NO$_{3}$
@@ -167,7 +167,7 @@ GTA GGT TGT ATC GAT GGT CAT
 made from the given parent strand during replication?
 
 \texttt{A:} Given the principle of base pairing, we can determine the daughter
-sequence to be (here in the 3' to 5' direction):
+sequence to be:
 
 
 \begin{verbatim}
@@ -185,7 +185,7 @@ involved in the synthesis of polypeptides from template DNA. Where in
 the cell do these processes take place?
 
 \texttt{A:} The synthesized polypeptide will consist of the amino acids
-\texttt{Met-Asp-Thr-STOP} (corresponding mRNA: \texttt{5'AUGGAUACAUAC}). Since it is
+\texttt{Met-Asp-Thr-Tyr} (corresponding mRNA: \texttt{5'AUGGAUACAUAC}). Since it is
 mentioned that exons are present, we can assume the translation will
 take place with the eukaryotic machinery. It will thus consist of the
 following general steps:
@@ -221,8 +221,8 @@ mutations is likely to be more harmful? Why?
 \texttt{A:} Here are the new sequences with mutated exons:
 
 \begin{itemize}
-\item TGTATC -> TGTTTC : the resulting polypeptide will be \texttt{Met-Glu-Thr-STOP}
-\item TGTATC -> TGTATG : the resulting polypeptide will be \texttt{Met-His-Thr-STOP}
+\item TGTATC -> TGTTTC : the resulting polypeptide will be \texttt{Met-Glu-Thr-Tyr}
+\item TGTATC -> TGTATG : the resulting polypeptide will be \texttt{Met-His-Thr-Tyr}
 \end{itemize}
 
 The second mutation would be the most disruptive. Indeed the original
@@ -230,7 +230,8 @@ Aspartate would be negatively charged in the physiological condition,
 and the Glutamate would also be negatively charged, the only
 difference between the 2 is then an additional CH2 group in the side
 chain. Histidine on the the other hand is neutral in physiological
-conditions, and the side chain is significantly larger.
+conditions, its side chain is also significantly larger/bulkier due to
+the aromatic ring.
 \subsubsection{Interactions with antibiotics}
 \label{sec-1-2-4}
 
@@ -241,8 +242,8 @@ macrolide antibiotics and the tetracycline antibiotics?
 proteins by affecting ribosomal activity \cite{AntibioticsRibosomeEffect}. 
 
 \begin{itemize}
-\item Macrolide : they prevent peptidyltransferase from linking the
-  peptide from the tRNA to the growing polypeptide chain.
+\item Macrolide : prevents peptidyltransferase from linking the peptide
+  from the tRNA to the growing polypeptide chain.
 \item Tetracycline : this one functions by preventing the binding of tRNA
   to mRNA in the ribosome.
 \end{itemize}
@@ -257,10 +258,12 @@ why this is not a serious problem.
 an organism, the fidelity of the DNA replication is required to ensure
 the continuity of the species and its viability accross multiple
 generation. The cell needs thus enforce a high fidelity of the
-replication process. On the other hand, whenever an incorrect mRNA is
-transcribed, the effect are very local and temporary, indeed there is
-no real harm in producing a couple of non-functioning mRNA or
-proteins.
+replication process through an extensive proof reading system. On the
+other hand, there is no proof reading for transcription. Whenever an
+incorrect mRNA is transcribed, the effect are very local and
+temporary, indeed there is no real harm in producing a couple of
+non-functioning mRNA or proteins that will eventually be degraded by
+the cell.
 \subsection{tRNA 3D-Structure}
 \label{sec-1-3}
 
@@ -269,18 +272,19 @@ functional groups and which chemical bonds/interactions contribute to
 this particular structure? Why is this particular structure of
 importance for the biological function?
 
-\texttt{A:} below is a representation of a tRNA structure \cite{tRNA-Phe}. The
-structure of the tRNA contains a couple of loops and contains parts
-with base pairing (hydrogen bonds). Couple of important sections can
-be identified that are common to tRNAs and critical to their
-function :
+\texttt{A:} Below is a representation of a tRNA structure
+\cite{tRNA-Phe}. The structure of the tRNA contains a couple of loops
+and contains parts with base pairing (hydrogen bonds). This structure
+is critical for the correct capture, processing, and release of the
+tRNAs by the ribosomes. Couple of important sections can be identified
+that are common to tRNAs and critical to their function :
 
 \begin{itemize}
-\item anticodon arm (blue): that loop will contain the anticodon (black)
+\item Anticodon arm (blue): that loop will contain the anticodon (black)
   which will base pair with the mRNA codon.
-\item acceptor stem (purple): which is the attachment site of the amino
+\item Acceptor stem (purple): which is the attachment site of the amino
   acids.
-\item T Arm (green): that region is a special recognition site for the
+\item T-Arm (green): that region is a special recognition site for the
   ribosome. It allows a tRNA-ribosome complex to form and translation
   to proceed.
 \end{itemize}
@@ -289,7 +293,8 @@ function :
 \section{Questions from Prof. B. Sels}
 \label{sec-2}
 
-Note: most answers to this work were found in the reference book \cite{BioChemBlei}
+Note: reference material for this part mostly come from the
+recommended class book \cite{BioChemBlei}
 \subsection{Biopolymer organisation}
 \label{sec-2-1}
 
@@ -303,15 +308,49 @@ chemical structure and/or physical properties.
 
 \texttt{A:} The fours main categories of polypeptide consist of the
 carbohydrates, the nucleic acids, the proteins (polypeptides), and the
-lipids. Here is my attempt at reorganizing them based on the above
+lipids. Here is my attempt at reorganizing them based on the following
 categories:
+\subsubsection{Energy}
+\label{sec-2-1-1}
 
 \begin{itemize}
-\item Energy: carbohydrates and lipids (long term storage)
-\item Structure: phospholipids for the cell membrane, proteins for the
-  exoskeletton and the misc filaments in the cell.
-\item Communication: proteins mostly, rna as intermediate for the
-  translation of proteins.
+\item Carbohydrates for short term storage of energy, either for
+  immediate release of energy (glucose, galactose, and other monomers
+  of C6H12O6), or for midterm storage of energy (Polysaccharide
+  glycogen).
+\item Lipids can be used in a triglyceride form to store energy for the
+  long term.
+\item The universal energy conveyor of the cellular life is ATP, which is
+  a triphosphated adenosine (nucleic acid).
+\end{itemize}
+\subsubsection{Structure}
+\label{sec-2-1-2}
+
+\begin{itemize}
+\item Phospholipids for the cell membrane, cholesterol for its
+  fluidity.
+\item Fibrous proteins are used to form the exoskeletton and the
+  misc filaments in the cell (Actin, Tubulin, etc)
+\item Polysaccharides can be used for structure as well, for example as
+  cellulose for the rigidity of the plants, or as chitin for the
+  exosqueleton of the insects.
+\end{itemize}
+\subsubsection{Communication}
+\label{sec-2-1-3}
+
+\begin{itemize}
+\item DNA is the central repository of information for the
+  organism genetic makeup, which is passed on through the
+  generations.
+\item RNA is the intermediate messenger for the translation of
+  proteins.
+\item Modified amino acids are involved in communication too (eg Thyroxine
+  and Melatonin).
+\item A host of membrane proteins that help recognizing and process
+  signals are found on most cells.
+\item Neurotransmitters that carry signal from one neurons' synapses to
+  another can be divided in 3 broad constitutive categories, which
+  include amino acids, peptides, and monoamines.
 \end{itemize}
 \subsection{Chemical structure of proteins and proteins separation}
 \label{sec-2-2}
@@ -346,8 +385,11 @@ the net charge on each polypeptide:
 \end{itemize}
 
 Separation of both proteins can thus be achieved by ion exchange
-chromatography since they both have a distinct charge
-\cite{BioChemPrinciples}.
+chromatography since they both have quite a distinct charge
+\cite{BioChemPrinciples}. For example, we could use anion exchange
+chromatography, which would capture the negatively charged
+polypeptide, and let the positively charged one pass through. The
+former could then be recovered later on by washing away the column.
 \subsection{Chemical structure of disaccharides}
 \label{sec-2-3}
 
@@ -367,18 +409,18 @@ polymerisation is achieved through an $\alpha$ binding between the
 C$_{6}$ of the Galactose, and the C$_{1}$ of the glucose molecule, giving
 the following molecular structure:
 
-\includegraphics[width=11cm]{./Figures/B-A(1-6)GalactoGlucose.pdf}
+\includegraphics[width=9cm]{./Figures/B-A(1-6)GalactoGlucose.pdf}
 
 \begin{itemize}
 \item $\beta$,$\alpha$(1→2)glucofructose
 \end{itemize}
 
-\includegraphics[width=8cm]{./Figures/BA(1-2)GlucoFructose2.pdf}
+\includegraphics[width=6cm]{./Figures/BA(1-2)GlucoFructose2.pdf}
 \section{Questions from Prof. D. De Vos}
 \label{sec-3}
 
-Note: most answers to this work were found in the reference
-book \cite{BioChemBlei}
+Note: reference material for this part mostly come from the
+recommended class book \cite{BioChemBlei}
 
 Considering the following molecule:
 
