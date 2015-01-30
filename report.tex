@@ -1,4 +1,4 @@
-% Created 2015-01-29 Don 13:32
+% Created 2015-01-30 Fre 17:00
 \documentclass[11pt, a4paper,titlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -106,13 +106,18 @@ Ammonium & Carbonate & Zinc & Nitrate  \\
 \texttt{Q:} Determine the oxidation state of all the atoms in all the
 compounds. Is this an oxidation-reduction reaction?
 
-\texttt{A:} Ammonium Carbonate and Zinc Nitrate (the reactants) are very soluble
-in water and will thus move freely. The Zinc and Carbonate ions will
-then precipitate.
+\texttt{A:} Ammonium Carbonate and Zinc Nitrate (the reactants) are very
+soluble in water and will thus move freely as charged ions. The Zinc
+and Carbonate ions will precipitate. The reaction is not an
+oxydo-reduction as shown by the details :
 
 \begin{itemize}
-\item Zn has an oxidation state of 2:  Zn →  Zn$^{\mathrm{2+}}$ + 2 e$^{-}$
-\item (CO$_{3}$) has an oxidation state of 4: (CO$_{3}$)$^{\mathrm{2-}}$ + 2 e$^{-}$ → CO$_{3}$
+\item Zn(NO$_{3}$)$_{2}$ each O are -2, N is +5, and (NO3$^{-}$)$_{2}$ is -2 and Zn is +2
+\item (NH$_{4}$)$_{2}$CO$_{3}$ N is -3, each H are +1, and (NH$_{4}$)$_{2}$ is
+     +2. C is +4 and each O is -2, and (CO$_3$)$^{\mathrm{-2}}$ is -2.
+\item NH$_{4}$NO$_{3}$ for NH$_{4}$, the oxidation state is +1, and for NO$_{3}$
+  it's -1
+\item ZnCO$_{3}$ for Zn, the oxidation is +2, and it's -2 for CO$_3$
 \end{itemize}
 \subsubsection{Mass}
 \label{sec-1-1-5}
@@ -178,9 +183,10 @@ involved in the synthesis of polypeptides from template DNA. Where in
 the cell do these processes take place?
 
 \texttt{A:} The synthesized polypeptide will consist of the amino acids
-\texttt{Val-Cys-Ile-His}. Since it is mentioned that exons are present, we
-can assume the translation will take place with the eukaryotic
-machinery. It will consist of the following stages:
+\texttt{Met-Asp-Thr-STOP} (corresponding mRNA: \texttt{5'AUGGAUACAUAC}). Since it is
+mentioned that exons are present, we can assume the translation will
+take place with the eukaryotic machinery. It will consist of the
+following stages:
 
 \begin{itemize}
 \item Transcription: In the nucleus, the RNA Polymerase II will be
@@ -212,18 +218,34 @@ mutations is likely to be more harmful? Why?
 \texttt{A:} Here are the new sequences with mutated exons:
 
 \begin{itemize}
-\item TGTATC -> TGTTTC : the resulting polypeptide will be \texttt{Val-Phe-His}
-\item -> ATG : the resulting polypeptide will be \texttt{Val-Met-His}
+\item TGTATC -> TGTTTC : the resulting polypeptide will be \texttt{Met-Glu-Thr-STOP}
+\item TGTATC -> TGTATG : the resulting polypeptide will be \texttt{Met-His-Thr-STOP}
 \end{itemize}
 
-The second
+The second mutation would be the most disruptive. Indeed the original
+Aspartate would be negatively charged in the physiological condition,
+and the Glutamate would also be negatively charged, the only
+difference between the 2 is then an additional CH2 group in the side
+chain. Histidine on the the other hand is neutral in physiological
+conditions, and the side chain is significantly larger.
 \subsubsection{Interactions with antibiotics}
 \label{sec-1-2-4}
 
 \texttt{Q:} Which steps in polypeptide synthesis are affected by resp. the
 macrolide antibiotics and the tetracycline antibiotics?
 
-\texttt{A:}
+\texttt{A:} Both substance have the capabilities to inhibit the synthesis of
+proteins. 
+
+\begin{itemize}
+\item Macrolide : they have an action in that is thought to prevent
+  peptidyltransferase from linking the peptide from the tRNA to the
+  growing polypeptide chain. This is done by binding to the 50s
+  subunit of the ribosomes in prokaryotes.
+\item Tetracycline : this one function by preventing the binding of tRNA
+  to mRNA. This is done by binding the 30S ribosomal subunit of the
+  prokaryotic bacterias.
+\end{itemize}
 \subsubsection{Comparison of error rates}
 \label{sec-1-2-5}
 
@@ -231,7 +253,14 @@ macrolide antibiotics and the tetracycline antibiotics?
 of DNA replication. What is the origin of this difference? Motivate
 why this is not a serious problem.
 
-\texttt{A:}
+\texttt{A:} DNA being the central repository of the genetic information for
+an organism, the fidelity of the DNA replication is required to ensure
+the continuity of the species and its viability accross multiple
+generation. The cell needs thus enforce a high fidelity of the
+replication process. On the other hand, whenever an incorrect mRNA is
+transcribed, the effect are very local and temporary, indeed there is
+no real harm in producing a couple of non-functioning mRNA or
+proteins.
 \subsection{tRNA 3D-Structure}
 \label{sec-1-3}
 
@@ -240,7 +269,20 @@ functional groups and which chemical bonds/interactions contribute to
 this particular structure? Why is this particular structure of
 importance for the biological function?
 
-\texttt{A:}
+\texttt{A:} below is a representation of a tRNA structure\footnote{info
+\href{http://commons.wikimedia.org/wiki/File:TRNA-Phe_yeast_1ehz.png#mediaviewer/File:TRNA-Phe_yeast_1ehz.png}{http://commons.wikimedia.org/wiki/File:TRNA-Phe\_yeast\_1ehz.png\#mediaviewer/File:TRNA-Phe\_yeast\_1ehz.png}
+ }. The
+structure of the tRNA contains a couple of loops and is maintained
+through base pairing (hydrogen bonds). Couple of functional groups can
+be identified that are common to tRNAs:
+
+\begin{itemize}
+\item anticodon arm (blue): that loop will contain the anticodon (black)
+  which will base pair with the mRNA codon.
+\item 
+\end{itemize}
+
+\includegraphics[width=10cm]{./Figures/TRNA-Phe_yeast.png}
 \section{Questions from Prof. B. Sels}
 \label{sec-2}
 \subsection{Biopolymer organisation}
