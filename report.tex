@@ -1,4 +1,4 @@
-% Created 2015-01-30 Fre 17:00
+% Created 2015-01-30 Fre 20:15
 \documentclass[11pt, a4paper,titlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -21,6 +21,7 @@
 \usepackage{graphicx}
 \usepackage{titlesec}
 \usepackage{chemfig}
+\usepackage{tocbibind}
 \providecommand{\alert}[1]{\textbf{#1}}
 
 \title{}
@@ -44,9 +45,10 @@
 \clearpage
 
 
-
 \section{Questions from Prof. J. Vanderleyden – dr. H. Steenackers}
 \label{sec-1}
+
+Note: most answers to this work were found in the reference book \cite{BioChemBlei}
 \subsection{Chemical reaction equation}
 \label{sec-1-1}
 
@@ -63,10 +65,10 @@ Consider the following reaction: (NH$_{4}$)$_{2}$CO$_{3}$ +  Zn(NO$_{3}$)$_{2}$ 
 
 \texttt{A:}
 \begin{itemize}
-\item (NH$_{4}$)$_{2}$CO$_{3}$ : Ammonium carbonate
-\item Zn(NO$_{3}$)$_{2}$ : Zinc nitrate
-\item NH$_{4}$NO$_{3}$ : Ammonium nitrate
-\item ZnCO$_{3}$ : Zinc carbonate
+\item (NH$_{4}$)$_{2}$CO$_{3}$ : Ammonium Carbonate
+\item Zn(NO$_{3}$)$_{2}$ : Zinc Nitrate
+\item NH$_{4}$NO$_{3}$ : Ammonium Nitrate
+\item ZnCO$_{3}$ : Zinc Carbonate
 \end{itemize}
 \subsubsection{Lewis structure, VESPR}
 \label{sec-1-1-3}
@@ -109,7 +111,7 @@ compounds. Is this an oxidation-reduction reaction?
 \texttt{A:} Ammonium Carbonate and Zinc Nitrate (the reactants) are very
 soluble in water and will thus move freely as charged ions. The Zinc
 and Carbonate ions will precipitate. The reaction is not an
-oxydo-reduction as shown by the details :
+oxydo-reduction as shown by the details below:
 
 \begin{itemize}
 \item Zn(NO$_{3}$)$_{2}$ each O are -2, N is +5, and (NO3$^{-}$)$_{2}$ is -2 and Zn is +2
@@ -143,7 +145,7 @@ since it is in excess):
 From this last figure, we can infer that the number of moles of
 ZnCO$_{3}$ will be 2.11237. Given the molecular mass of ZnCO$_{3}$, we can
 compute the amount of ZnCO$_{3}$ produced to be: 2.11237 mol * 125.3889
-g/mol = 264.8678 g.
+g/mol = 264.87 g.
 \subsection{DNA sequence analysis}
 \label{sec-1-2}
 
@@ -185,13 +187,13 @@ the cell do these processes take place?
 \texttt{A:} The synthesized polypeptide will consist of the amino acids
 \texttt{Met-Asp-Thr-STOP} (corresponding mRNA: \texttt{5'AUGGAUACAUAC}). Since it is
 mentioned that exons are present, we can assume the translation will
-take place with the eukaryotic machinery. It will consist of the
-following stages:
+take place with the eukaryotic machinery. It will thus consist of the
+following general steps:
 
 \begin{itemize}
 \item Transcription: In the nucleus, the RNA Polymerase II will be
   recruited and will bind to the promoter of the gene. It will
-  produce, by moving in the 5' to 3' direction, a pre messenger RNA
+  produce, by moving in the 5' to 3' direction, a pre-messenger RNA
   which will be identical to the DNA template sequence (with the
   exception that Uracyl will be used instead of Thymine, and also the
   addition of a 5' CAP). That messenger RNA will then be processed by
@@ -200,12 +202,13 @@ following stages:
   ready to go outside of the nucleus to be translated.
 \item Translation: the mRNA leaves the nucleus and passes through the
   reticulated ER where it will be captured by a ribosome that will
-  either bind to the ER or not. It will then start scanning for a
-  start codon in the mRNA. From that point on, the synthesis of a
-  polypeptide will be accomplished by reading 3 base pairs at a time
-  and pairing these 3 with the correct tRNA. After that, the
-  polypeptide will either be processed further and sent to the golgi
-  apparatus, or will remain in the cytosol.
+  either bind to the ER or not depending on the signal encoded in the
+  mRNA. It will then start scanning for a start codon in the
+  mRNA. From that point on, the synthesis of a polypeptide will be
+  accomplished by reading 3 base pairs at a time and pairing these 3
+  with the correct tRNA. After that, the polypeptide will either be
+  processed further and sent to the golgi apparatus, or will remain in
+  the cytosol.
 \end{itemize}
 \subsubsection{Mutated exon}
 \label{sec-1-2-3}
@@ -235,16 +238,13 @@ conditions, and the side chain is significantly larger.
 macrolide antibiotics and the tetracycline antibiotics?
 
 \texttt{A:} Both substance have the capabilities to inhibit the synthesis of
-proteins. 
+proteins by affecting ribosomal activity \cite{AntibioticsRibosomeEffect}. 
 
 \begin{itemize}
-\item Macrolide : they have an action in that is thought to prevent
-  peptidyltransferase from linking the peptide from the tRNA to the
-  growing polypeptide chain. This is done by binding to the 50s
-  subunit of the ribosomes in prokaryotes.
-\item Tetracycline : this one function by preventing the binding of tRNA
-  to mRNA. This is done by binding the 30S ribosomal subunit of the
-  prokaryotic bacterias.
+\item Macrolide : they prevent peptidyltransferase from linking the
+  peptide from the tRNA to the growing polypeptide chain.
+\item Tetracycline : this one functions by preventing the binding of tRNA
+  to mRNA in the ribosome.
 \end{itemize}
 \subsubsection{Comparison of error rates}
 \label{sec-1-2-5}
@@ -269,22 +269,27 @@ functional groups and which chemical bonds/interactions contribute to
 this particular structure? Why is this particular structure of
 importance for the biological function?
 
-\texttt{A:} below is a representation of a tRNA structure\footnote{info
-\href{http://commons.wikimedia.org/wiki/File:TRNA-Phe_yeast_1ehz.png#mediaviewer/File:TRNA-Phe_yeast_1ehz.png}{http://commons.wikimedia.org/wiki/File:TRNA-Phe\_yeast\_1ehz.png\#mediaviewer/File:TRNA-Phe\_yeast\_1ehz.png}
- }. The
-structure of the tRNA contains a couple of loops and is maintained
-through base pairing (hydrogen bonds). Couple of functional groups can
-be identified that are common to tRNAs:
+\texttt{A:} below is a representation of a tRNA structure \cite{tRNA-Phe}. The
+structure of the tRNA contains a couple of loops and contains parts
+with base pairing (hydrogen bonds). Couple of important sections can
+be identified that are common to tRNAs and critical to their
+function :
 
 \begin{itemize}
 \item anticodon arm (blue): that loop will contain the anticodon (black)
   which will base pair with the mRNA codon.
-\item 
+\item acceptor stem (purple): which is the attachment site of the amino
+  acids.
+\item T Arm (green): that region is a special recognition site for the
+  ribosome. It allows a tRNA-ribosome complex to form and translation
+  to proceed.
 \end{itemize}
 
 \includegraphics[width=10cm]{./Figures/TRNA-Phe_yeast.png}
 \section{Questions from Prof. B. Sels}
 \label{sec-2}
+
+Note: most answers to this work were found in the reference book \cite{BioChemBlei}
 \subsection{Biopolymer organisation}
 \label{sec-2-1}
 
@@ -296,7 +301,18 @@ functions: energy, structure, and communication. Explain the
 physiological function of each biopolymer type with regard to its
 chemical structure and/or physical properties.
 
-\texttt{A:}
+\texttt{A:} The fours main categories of polypeptide consist of the
+carbohydrates, the nucleic acids, the proteins (polypeptides), and the
+lipids. Here is my attempt at reorganizing them based on the above
+categories:
+
+\begin{itemize}
+\item Energy: carbohydrates and lipids (long term storage)
+\item Structure: phospholipids for the cell membrane, proteins for the
+  exoskeletton and the misc filaments in the cell.
+\item Communication: proteins mostly, rna as intermediate for the
+  translation of proteins.
+\end{itemize}
 \subsection{Chemical structure of proteins and proteins separation}
 \label{sec-2-2}
 
@@ -330,7 +346,8 @@ the net charge on each polypeptide:
 \end{itemize}
 
 Separation of both proteins can thus be achieved by ion exchange
-chromatography since they both have a distinct charge.
+chromatography since they both have a distinct charge
+\cite{BioChemPrinciples}.
 \subsection{Chemical structure of disaccharides}
 \label{sec-2-3}
 
@@ -360,6 +377,9 @@ the following molecular structure:
 \section{Questions from Prof. D. De Vos}
 \label{sec-3}
 
+Note: most answers to this work were found in the reference
+book \cite{BioChemBlei}
+
 Considering the following molecule:
 
 \includegraphics[width=10cm]{./Figures/Part3MoleculeRaw.pdf}
@@ -385,5 +405,9 @@ molecules and increase the solubility of the molecule in water :
 \item Carbonyl groups (3 of them)
 \item Amino group (1 present)
 \end{itemize}
+
+
+\bibliographystyle{plain}
+\bibliography{bib-db}
 
 \end{document}

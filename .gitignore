@@ -1,5 +1,9 @@
 # LaTex
 *.aux
+*.bbl
+*.out
+*.toc
+*.blg
 
 # emacs specific files
 

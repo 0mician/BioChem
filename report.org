@@ -8,6 +8,7 @@
 #+LATEX_HEADER: \usepackage{graphicx}
 #+LATEX_HEADER: \usepackage{titlesec}
 #+LATEX_HEADER: \usepackage{chemfig}
+#+LATEX_HEADER: \usepackage{tocbibind}
 #+TITLE:
 #+BEGIN_LaTeX
 \setlength{\parskip}{0pt}%
@@ -22,8 +23,8 @@
 #+OPTIONS: LaTeX:dvipng, toc:nil
 
 
-
 * Questions from Prof. J. Vanderleyden – dr. H. Steenackers
+Note: most answers to this work were found in the reference book \cite{BioChemBlei}
 ** Chemical reaction equation
 
 Consider the following reaction: (NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  NH_{4}NO_{3} + ZnCO_{3}
@@ -35,10 +36,10 @@ Consider the following reaction: (NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  NH_{4
 =Q:= Name all reactants and reaction products.
 
 =A:=
-- (NH_{4})_{2}CO_{3} : Ammonium carbonate
-- Zn(NO_{3})_{2} : Zinc nitrate
-- NH_{4}NO_{3} : Ammonium nitrate
-- ZnCO_{3} : Zinc carbonate
+- (NH_{4})_{2}CO_{3} : Ammonium Carbonate
+- Zn(NO_{3})_{2} : Zinc Nitrate
+- NH_{4}NO_{3} : Ammonium Nitrate
+- ZnCO_{3} : Zinc Carbonate
 
 *** Lewis structure, VESPR
 =Q:= Construct the Lewis structures of the polyatomic ions you recognize
@@ -78,7 +79,7 @@ compounds. Is this an oxidation-reduction reaction?
 =A:= Ammonium Carbonate and Zinc Nitrate (the reactants) are very
 soluble in water and will thus move freely as charged ions. The Zinc
 and Carbonate ions will precipitate. The reaction is not an
-oxydo-reduction as shown by the details :
+oxydo-reduction as shown by the details below:
 
 - Zn(NO_{3})_{2} each O are -2, N is +5, and (NO3^{-})_{2} is -2 and Zn is +2
 - (NH_{4})_{2}CO_{3} N is -3, each H are +1, and (NH_{4})_{2} is
@@ -86,6 +87,7 @@ oxydo-reduction as shown by the details :
 - NH_{4}NO_{3} for NH_{4}, the oxidation state is +1, and for NO_{3}
   it's -1
 - ZnCO_{3} for Zn, the oxidation is +2, and it's -2 for CO_3
+
 *** Mass
 =Q:= How many grams of ZnCO3 can be prepared from 400g Zn(NO3)2 by
 using sufficient(NH4)2CO3?
@@ -104,7 +106,7 @@ since it is in excess):
 From this last figure, we can infer that the number of moles of
 ZnCO_{3} will be 2.11237. Given the molecular mass of ZnCO_{3}, we can
 compute the amount of ZnCO_{3} produced to be: 2.11237 mol * 125.3889
-g/mol = 264.8678 g.
+g/mol = 264.87 g.
 
 ** DNA sequence analysis
 
@@ -139,14 +141,14 @@ involved in the synthesis of polypeptides from template DNA. Where in
 the cell do these processes take place?
 
 =A:= The synthesized polypeptide will consist of the amino acids
-=Met-Asp-Thr-STOP= (corresponding mRNA: =5'AUGGAUACAUAC=). Since it is
+=Met-Asp-Thr-Tyr= (corresponding mRNA: =5'AUGGAUACAUAC=). Since it is
 mentioned that exons are present, we can assume the translation will
-take place with the eukaryotic machinery. It will consist of the
-following stages:
+take place with the eukaryotic machinery. It will thus consist of the
+following general steps:
 
 - Transcription: In the nucleus, the RNA Polymerase II will be
   recruited and will bind to the promoter of the gene. It will
-  produce, by moving in the 5' to 3' direction, a pre messenger RNA
+  produce, by moving in the 5' to 3' direction, a pre-messenger RNA
   which will be identical to the DNA template sequence (with the
   exception that Uracyl will be used instead of Thymine, and also the
   addition of a 5' CAP). That messenger RNA will then be processed by
@@ -156,12 +158,13 @@ following stages:
 
 - Translation: the mRNA leaves the nucleus and passes through the
   reticulated ER where it will be captured by a ribosome that will
-  either bind to the ER or not. It will then start scanning for a
-  start codon in the mRNA. From that point on, the synthesis of a
-  polypeptide will be accomplished by reading 3 base pairs at a time
-  and pairing these 3 with the correct tRNA. After that, the
-  polypeptide will either be processed further and sent to the golgi
-  apparatus, or will remain in the cytosol.
+  either bind to the ER or not depending on the signal encoded in the
+  mRNA. It will then start scanning for a start codon in the
+  mRNA. From that point on, the synthesis of a polypeptide will be
+  accomplished by reading 3 base pairs at a time and pairing these 3
+  with the correct tRNA. After that, the polypeptide will either be
+  processed further and sent to the golgi apparatus, or will remain in
+  the cytosol.
 
 *** Mutated exon
 =Q:= What polypeptide sequence will be synthesized if the ATC in exon
@@ -171,8 +174,8 @@ mutations is likely to be more harmful? Why?
 
 =A:= Here are the new sequences with mutated exons:
 
-- TGTATC -> TGTTTC : the resulting polypeptide will be =Met-Glu-Thr-STOP= 
-- TGTATC -> TGTATG : the resulting polypeptide will be =Met-His-Thr-STOP=
+- TGTATC -> TGTTTC : the resulting polypeptide will be =Met-Glu-Thr-Tyr= 
+- TGTATC -> TGTATG : the resulting polypeptide will be =Met-His-Thr-Tyr=
 
 The second mutation would be the most disruptive. Indeed the original
 Aspartate would be negatively charged in the physiological condition,
@@ -186,16 +189,13 @@ conditions, and the side chain is significantly larger.
 macrolide antibiotics and the tetracycline antibiotics?
 
 =A:= Both substance have the capabilities to inhibit the synthesis of
-proteins. 
+proteins by affecting ribosomal activity \cite{AntibioticsRibosomeEffect}. 
 
-- Macrolide : they have an action in that is thought to prevent
-  peptidyltransferase from linking the peptide from the tRNA to the
-  growing polypeptide chain. This is done by binding to the 50s
-  subunit of the ribosomes in prokaryotes.
+- Macrolide : they prevent peptidyltransferase from linking the
+  peptide from the tRNA to the growing polypeptide chain. 
 
-- Tetracycline : this one function by preventing the binding of tRNA
-  to mRNA. This is done by binding the 30S ribosomal subunit of the
-  prokaryotic bacterias.
+- Tetracycline : this one functions by preventing the binding of tRNA
+  to mRNA in the ribosome. 
 
 *** Comparison of error rates
 =Q:= The error rate in RNA synthesis is much higher than the error rate
@@ -206,10 +206,11 @@ why this is not a serious problem.
 an organism, the fidelity of the DNA replication is required to ensure
 the continuity of the species and its viability accross multiple
 generation. The cell needs thus enforce a high fidelity of the
-replication process. On the other hand, whenever an incorrect mRNA is
-transcribed, the effect are very local and temporary, indeed there is
-no real harm in producing a couple of non-functioning mRNA or
-proteins.
+replication process through an extensive proof reading system. On the
+other hand,There is no proof reading for transcription. Whenever an
+incorrect mRNA is transcribed, the effect are very local and
+temporary, indeed there is no real harm in producing a couple of
+non-functioning mRNA or proteins.
 
 ** tRNA 3D-Structure
 =Q:= All tRNA molecules have a particular 3D-structure. Which
@@ -217,7 +218,7 @@ functional groups and which chemical bonds/interactions contribute to
 this particular structure? Why is this particular structure of
 importance for the biological function?
 
-=A:= below is a representation of a tRNA structure[fn:1]. The
+=A:= below is a representation of a tRNA structure \cite{tRNA-Phe}. The
 structure of the tRNA contains a couple of loops and contains parts
 with base pairing (hydrogen bonds). Couple of important sections can
 be identified that are common to tRNAs and critical to their
@@ -231,12 +232,11 @@ function :
   ribosome. It allows a tRNA-ribosome complex to form and translation
   to proceed.
 
-[fn:1] info http://commons.wikimedia.org/wiki/File:TRNA-Phe_yeast_1ehz.png#mediaviewer/File:TRNA-Phe_yeast_1ehz.png
-
 #+ATTR_LATEX: width=10cm
 [[./Figures/TRNA-Phe_yeast.png]]
 
 * Questions from Prof. B. Sels
+Note: most answers to this work were found in the reference book \cite{BioChemBlei}
 ** Biopolymer organisation
 =Q:= The course and the textbook systematically organize four important
 biopolymers mainly according to their chemical structure. Attempt a
@@ -246,7 +246,17 @@ functions: energy, structure, and communication. Explain the
 physiological function of each biopolymer type with regard to its
 chemical structure and/or physical properties.
 
-=A:=
+=A:= The fours main categories of polypeptide consist of the
+carbohydrates, the nucleic acids, the proteins (polypeptides), and the
+lipids. Here is my attempt at reorganizing them based on the above
+categories:
+
+- Energy: carbohydrates and lipids (long term storage)
+- Structure: phospholipids for the cell membrane, proteins for the
+  exoskeletton and the misc filaments in the cell.
+- Communication: proteins mostly, rna as intermediate for the
+  translation of proteins.
+
 ** Chemical structure of proteins and proteins separation
 =Q:= Draw the chemical structure of the following two oligopeptide
 structures, a) Gln-Ser-Lys-Lys-Ser and b) Cys-Asp-Asp-Glu-Lys,
@@ -284,7 +294,8 @@ the net charge on each polypeptide:
   #+END_LaTeX
 
 Separation of both proteins can thus be achieved by ion exchange
-chromatography since they both have a distinct charge.
+chromatography since they both have a distinct charge
+\cite{BioChemPrinciples}.
 
 ** Chemical structure of disaccharides
 =Q:= Draw the chemical structure of the following disaccharides: a)
@@ -310,6 +321,9 @@ the following molecular structure:
 [[./Figures/BA(1-2)GlucoFructose2.pdf]]
 
 * Questions from Prof. D. De Vos
+Note: most answers to this work were found in the reference
+book \cite{BioChemBlei}
+
 Considering the following molecule:
 
 #+ATTR_LATEX: width=10cm
@@ -333,3 +347,7 @@ molecules and increase the solubility of the molecule in water :
 - Hydroxyl groups (5 of them)
 - Carbonyl groups (3 of them)
 - Amino group (1 present)
+
+
+#+LATEX: \bibliographystyle{plain}
+#+LATEX: \bibliography{bib-db}
