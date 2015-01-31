@@ -39,7 +39,7 @@ Consider the following reaction: (NH_{4})_{2}CO_{3} +  Zn(NO_{3})_{2} →  NH_{4
 - (NH_{4})_{2}CO_{3} : Ammonium Carbonate
 - Zn(NO_{3})_{2} : Zinc Nitrate
 - NH_{4}NO_{3} : Ammonium Nitrate
-- ZnCO_{3} : Zinc Carbonate
+- ZnCO_{3} : Zinc Carbonate (also known as "Smithsonite")
 
 *** Lewis structure, VESPR
 =Q:= Construct the Lewis structures of the polyatomic ions you recognize
@@ -97,7 +97,7 @@ using sufficient(NH4)2CO3?
 - Molecular weigth of Zn(NO_{3})_{2} :: 189.36 g/mol
 - Molecular weigth of (NH_{4})_{2}CO_{3} :: 96.09 g/mol
 
-Given that there are 400g of Zn(NO_{3})_{2}, we can calculate the
+Given that there is 400g of Zn(NO_{3})_{2}, we can calculate the
 number of moles of reactant (and ignore that of (NH_{4})_{2}CO_{3}
 since it is in excess):
 
@@ -156,15 +156,14 @@ following general steps:
   will also be added at the 3' end of the mRNA. The mRNA is then
   ready to go outside of the nucleus to be translated.
 
-- Translation: the mRNA leaves the nucleus and passes through the
-  reticulated ER where it will be captured by a ribosome that will
-  either bind to the ER or not depending on the signal encoded in the
-  mRNA. It will then start scanning for a start codon in the
-  mRNA. From that point on, the synthesis of a polypeptide will be
-  accomplished by reading 3 base pairs at a time and pairing these 3
-  with the correct tRNA. After that, the polypeptide will either be
-  processed further and sent to the golgi apparatus, or will remain in
-  the cytosol.
+- Translation: the mRNA leaves the nucleus and it will be captured by
+  a ribosome that will either bind to the ER or not depending on the
+  signal encoded in the mRNA. It will then start scanning for a start
+  codon in the mRNA. From that point on, the synthesis of a
+  polypeptide will be accomplished by reading 3 base pairs at a time
+  and pairing these 3 with the correct tRNA. After that, the
+  polypeptide will either be processed further and sent to the golgi
+  apparatus, or will remain in the cytosol.
 
 *** Mutated exon
 =Q:= What polypeptide sequence will be synthesized if the ATC in exon
@@ -183,7 +182,7 @@ and the Glutamate would also be negatively charged, the only
 difference between the 2 is then an additional CH2 group in the side
 chain. Histidine on the the other hand is neutral in physiological
 conditions, its side chain is also significantly larger/bulkier due to
-the aromatic ring.
+the presence of an aromatic ring.
 
 *** Interactions with antibiotics
 =Q:= Which steps in polypeptide synthesis are affected by resp. the
@@ -195,7 +194,7 @@ proteins by affecting ribosomal activity \cite{AntibioticsRibosomeEffect}.
 - Macrolide : prevents peptidyltransferase from linking the peptide
   from the tRNA to the growing polypeptide chain.
 
-- Tetracycline : this one functions by preventing the binding of tRNA
+- Tetracycline : this one functions by preventing proper binding of tRNA
   to mRNA in the ribosome. 
 
 *** Comparison of error rates
@@ -210,7 +209,7 @@ generation. The cell needs thus enforce a high fidelity of the
 replication process through an extensive proof reading system. On the
 other hand, there is no proof reading for transcription. Whenever an
 incorrect mRNA is transcribed, the effect are very local and
-temporary, indeed there is no real harm in producing a couple of
+temporary. Indeed there is no real harm in producing a couple of
 non-functioning mRNA or proteins that will eventually be degraded by
 the cell.
 
@@ -224,8 +223,8 @@ importance for the biological function?
 \cite{tRNA-Phe}. The structure of the tRNA contains a couple of loops
 and contains parts with base pairing (hydrogen bonds). This structure
 is critical for the correct capture, processing, and release of the
-tRNAs by the ribosomes. Couple of important sections can be identified
-that are common to tRNAs and critical to their function :
+tRNAs by the ribosomes. A couple of important sections can be identified
+which are common to tRNAs and critical to their function :
 
 - Anticodon arm (blue): that loop will contain the anticodon (black)
   which will base pair with the mRNA codon.
@@ -256,22 +255,31 @@ lipids. Here is my attempt at reorganizing them based on the following
 categories:
 
 *** Energy
-- Carbohydrates for short term storage of energy, either for
-  immediate release of energy (glucose, galactose, and other monomers
-  of C6H12O6), or for midterm storage of energy (Polysaccharide
-  glycogen).  
-- Lipids can be used in a triglyceride form to store energy for the
-  long term.
+- Carbohydrates for short term storage of energy, either for immediate
+  release of energy (glucose, galactose, etc), or for midterm storage
+  of energy (Polysaccharide glycogen).
+- Lipids can be used in a triacylglycerols form to store energy for
+  the long term.
 - The universal energy conveyor of the cellular life is ATP, which is
   a triphosphated adenosine (nucleic acid).
 *** Structure
-- Phospholipids for the cell membrane, cholesterol for its
-  fluidity. 
+- Glycerophospholipids are the most abundant lipids found in the cell
+  membrane. 
+- Steroids such as cholesterol are important for the fluidity of the
+  membrane.
 - Fibrous proteins are used to form the exoskeletton and the
-  misc filaments in the cell (Actin, Tubulin, etc)
+  misc filaments inside the cell (Actin, Tubulin, etc). They also
+  play an important part of the movement capabilities for unicellular
+  organism (flagella, cilia)
 - Polysaccharides can be used for structure as well, for example as
   cellulose for the rigidity of the plants, or as chitin for the
   exosqueleton of the insects.
+- Peptidoglycans are a major component of bacterial cell walls (they
+  give it strength)
+- Waxes, which are non polar esters of long-chain fatty acids and
+  long chain of monohydroxylic alcoohols are widely distributed in
+  nature as protective, waterproof coatings on leaves, fruits, animal
+  skin, fur, and feathers.
 *** Communication
 - DNA is the central repository of information for the
   organism genetic makeup, which is passed on through the
@@ -279,12 +287,16 @@ categories:
 - RNA is the intermediate messenger for the translation of
   proteins. 
 - Modified amino acids are involved in communication too (eg Thyroxine
-  and Melatonin).
+  and Melatonin). Important in this category are the cAMP, and cGMP
+  which are often found as secondary messenger units for
+  communication within the cell.
 - A host of membrane proteins that help recognizing and process
-  signals are found on most cells.
+  signals are found on most cells. An important family of these
+  membrane proteins are the G-Proteins which help with signal
+  transduction. 
 - Neurotransmitters that carry signal from one neurons' synapses to
-  another can be divided in 3 broad constitutive categories, which
-  include amino acids, peptides, and monoamines.
+  another. Many of these neurotransmitters are synthesized from amino
+  acids precursors.
 
 ** Chemical structure of proteins and proteins separation
 =Q:= Draw the chemical structure of the following two oligopeptide
@@ -337,17 +349,20 @@ the \beta-anomer of \alpha(1→6)galactoglucose and b)
 =A:= These are the chemical structure of:
 - \beta-anomer of \alpha(1→6)galactoglucose
 
-Beta anomers have a cis relationship between the CH_{2}OH group on
-the C_{1} and the OH group on the C_{6}. This helps us determine the
-structure of the monosaccharides galactose and glucose. The
-polymerisation is achieved through an \alpha binding between the
-C_{6} of the Galactose, and the C_{1} of the glucose molecule, giving
-the following molecular structure:
+Beta anomers have a cis relationship between the CH_{2}OH group on the
+C_{1} and the OH group on the C_{6}. This helps us determine the
+structure of the monosaccharide glucose. The polymerisation is
+achieved through an \alpha binding between the C_{6} of the Galactose,
+and the C_{1} of the glucose molecule, giving the following molecular
+structure:
 
 #+ATTR_LATEX: width=9cm
 [[./Figures/B-A(1-6)GalactoGlucose.pdf]]
 
 - \beta,\alpha(1→2)glucofructose
+
+The same principle are applied here for the dissacharide consisting
+of Glucose and fructose:
 
 #+ATTR_LATEX: width=6cm
 [[./Figures/BA(1-2)GlucoFructose2.pdf]]
@@ -358,7 +373,7 @@ recommended class book \cite{BioChemBlei}
 
 Considering the following molecule:
 
-#+ATTR_LATEX: width=10cm
+#+ATTR_LATEX: width=8cm
 [[./Figures/Part3MoleculeRaw.pdf]]
 
 ** Functional groups
@@ -380,6 +395,13 @@ molecules and increase the solubility of the molecule in water :
 - Carbonyl groups (3 of them)
 - Amino group (1 present)
 
+We can also observe that the molecule (which is the molecule of
+Doxorubicin, used among other things for treatment of cancer via
+chemotherapy \cite{Doxorubicin}) contains interesting linkages, most
+notably ether bonds, of which the electron pairs on the oxygens can
+partake in H-Bonds with water and thus make the molecule more
+hydropholic.
 
+#+LATEX: \vfill
 #+LATEX: \bibliographystyle{plain}
 #+LATEX: \bibliography{bib-db}
